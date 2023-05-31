@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+double distance(double x1, double y1, double x2, double y2) {
+    return sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+}
+
+void triangle(double x1, double y1, double x2, double y2, double x3, double y3, double& p, double& S) {
+    double a = distance(x1, y1, x2, y2);
+    double b = distance(x2, y2, x3, y3);
+    double c = distance(x3, y3, x1, y1);
+    p = a + b + c;
+    S = sqrt(p * (p - 2 * a) * (p - 2 * b) * (p - 2 * c)) / 2;
+}
+
+int main() {
+    double x1, y1, x2, y2, x3, y3, p, S;
+    cout << "Введите координаты трех вершин треугольника: ";
+    cin >> x1 >> y1 >> x2 >> y2 >> x3 >> y3;
+    triangle(x1, y1, x2, y2, x3, y3, p, S);
+    cout << "Периметр треугольника: " << p << endl;
+    cout << "Площадь треугольника: " << S << endl;
+    return 0;
+}

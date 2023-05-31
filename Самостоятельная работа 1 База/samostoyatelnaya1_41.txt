@@ -1,0 +1,64 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  double a, a2, a4, a5, a7, a8, a9, a10, a13, a25, a21, a28, a64;
+  cout << "Введите число a: ";
+  cin >> a;
+
+  // а^2
+  a2 = a * a; 
+
+  // а^4
+  a4 = a2 * a2; 
+
+  // а^8
+  a8 = a4 * a4;
+
+  // а^16
+  double a16 = a8 * a8;
+
+  // а^32
+  double a32 = a16 * a16;
+
+  // а^64
+  a64 = a32 * a32;
+
+  // а^5
+  a5 = a * a4;
+
+  // а^7
+  a7 = a5 * a2;
+
+  // а^9
+  a9 = a8 * a;
+
+  // а^10
+  a10 = a5 * a5;
+
+  // а^13
+  a13 = a10 * a2 * a;
+
+  // а^25 
+  a25 = a13 * a13 * a13 * a;
+
+  // а^21
+  a21 = a13 * a8;
+
+  // а^28
+  a28 = a21 * a7;
+
+  cout << "a^4: " << a4 << endl;
+  cout << "a^5: " << a5 << endl;
+  cout << "a^7: " << a7 << endl;
+  cout << "a^8: " << a8 << endl;
+  cout << "a^9: " << a9 << endl;
+  cout << "a^10: " << a10 << endl;
+  cout << "a^13: " << a13 << endl;
+  cout << "a^25: " << a25 << endl;
+  cout << "a^21: " << a21 << endl;
+  cout << "a^28: " << a28 << endl;
+  cout << "a^64: " << a64 << endl;
+
+  return 0;
+}

@@ -1,0 +1,11 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int L;
+    cin >> L;
+    int full_meters = L / 100;
+    cout << full_meters << endl;
+    return 0;
+}

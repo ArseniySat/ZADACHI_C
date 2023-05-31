@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+   float x1, y1, x2, y2;
+   cout << "Введите координаты двух противоположных вершин прямоугольника: " << endl;
+   cin >> x1 >> y1 >> x2 >> y2;
+   float a, b, perim, area;
+   if (x1 > x2) {
+      a = x1 - x2;
+   } else {
+      a = x2 - x1;
+   }
+   if (y1 > y2) {
+      b = y1 - y2;
+   } else {
+      b = y2 - y1;
+   }
+   perim = 2 * (a + b);
+   area = a * b;
+   cout << "Периметр прямоугольника: " << perim << endl;
+   cout << "Площадь прямоугольника: " << area << endl;
+   return 0;
+}

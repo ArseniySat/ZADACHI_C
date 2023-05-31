@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    float R1, R2;
+    cout << "Enter the radii of the two circles (R1 > R2): ";
+    cin >> R1 >> R2;
+    float S1 = 3.1415926 * R1 * R1;
+    float S2 = 3.1415926 * R2 * R2;
+    float S3 = S1 - S2;
+    cout << "The area of the first circle S1 is " << S1 << endl;
+    cout << "The area of the second circle S2 is " << S2 << endl;
+    cout << "The area of the ring S3 is " << S3 << endl;
+    return 0;
+}

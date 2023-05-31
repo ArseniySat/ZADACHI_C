@@ -1,0 +1,20 @@
+
+#include <iostream>
+
+using namespace std;
+
+void swap(double& a, double& b) {
+    double temp = a;
+    a = b;
+    b = temp;
+}
+
+int main() {
+    double a, b;
+    cout << "Введите две переменные: ";
+    cin >> a >> b;
+    swap(a, b);
+    cout << "Значения переменных после обмена: " << a << " " << b << endl;
+    return 0;
+}
+

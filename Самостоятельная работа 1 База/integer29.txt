@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int A, B, C;
+    cout << "Enter dimensions of rectangle (AxB): ";
+    cin >> A >> B;
+    cout << "Enter side of square (C): ";
+    cin >> C;
+
+    int count = 0;
+    for (int i = C; i <= min(A, B); i += C) {
+        count += (A / i) * (B / i);
+    }
+
+    int area = A * B - count * (C * C);
+    cout << "Number of squares: " << count << endl;
+    cout << "Unoccupied area: " << area << endl;
+    return 0;
+}

@@ -1,0 +1,14 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    float a, b;
+    cout << "Enter the two legs of the right triangle: ";
+    cin >> a >> b;
+    float c = sqrt(a * a + b * b);
+    float P = a + b + c;
+    cout << "The hypotenuse of the right triangle is " << c << endl;
+    cout << "The perimeter of the right triangle is " << P << endl;
+    return 0;
+}

@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    double a, b, c;
+    cout << "Введите три переменные: ";
+    cin >> a >> b >> c;
+    double temp = b;
+    b = c;
+    c = a;
+    a = temp;
+    cout << "Значения переменных после обмена (1): " << a << " " << b << " " << c << endl;
+    b = a + b + c;
+    c = b - a - c;
+    a = b - a - c;
+    cout << "Значения переменных после обмена (2): " << a << " " <<
+b << " " << c << endl;
+    return 0;
+}

@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    double a, b, c;
+    cout << "Введите длины сторон прямоугольного параллелепипеда: ";
+    cin >> a >> b >> c;
+    if (a <= 0 || b <= 0 || c <= 0) {
+        cout << "Ошибка: некорректные данные!" << endl;
+        return 1;
+    }
+    double v = a * b * c;
+    double s = 2 * (a * b + b * c + a * c);
+    cout << "Объем параллелепипеда: " << v << endl;
+    cout << "Площадь боковой поверхности параллелепипеда: " << s << endl;
+    return 0;
+}

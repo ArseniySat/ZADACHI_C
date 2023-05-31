@@ -1,0 +1,11 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int A, B;
+    cin >> A >> B;
+    int unused_length = A - A / B * B;
+    cout << unused_length << endl;
+    return 0;
+}

@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    float S;
+    cout << "Enter the area of the circle: ";
+    cin >> S;
+    float D = sqrt(4 * S / 3.1415926);
+    float L = 3.1415926 * D;
+    cout << "The diameter of the circle is " << D << endl;
+    cout << "The circumference of the circle is " << L << endl;
+    return 0;
+}

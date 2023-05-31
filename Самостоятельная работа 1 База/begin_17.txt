@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+   float a, b, c;
+   cout << "Введите координаты точек A, B и C на числовой оси: " << endl;
+   cin >> a >> b >> c;
+   float ac, bc, sum;
+   if (a > c) {
+      ac = a - c;
+   } else {
+      ac = c - a;
+   }
+   if (b > c) {
+      bc = b - c;
+   } else {
+      bc = c - b;
+   }
+   sum = ac + bc;
+   cout << "Длина отрезка AC: " << ac << endl;
+   cout << "Длина отрезка BC: " << bc << endl;
+   cout << "Сумма длин отрезков AC и BC: " << sum << endl;
+   return 0;
+}

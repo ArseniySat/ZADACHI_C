@@ -1,0 +1,12 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+   float x, y;
+   cout << "Введите значение переменной x: " << endl;
+   cin >> x;
+   y = 3 * x - 6 * x * x - 7;
+   cout << "Значение функции y = 3x - 6x^2 - 7 при x = " << x << " : " << y << endl;
+   return 0;
+}

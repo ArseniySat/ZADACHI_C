@@ -1,0 +1,18 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+    float a, b, sum, diff, prod, quot;
+    cout << "Enter two non-zero numbers: ";
+    cin >> a >> b;
+    sum = abs(a) + abs(b);
+    diff = abs(a) - abs(b);
+    prod = abs(a) * abs(b);
+    quot = abs(a) / abs(b);
+    cout << "Sum of their absolute values = " << sum << endl;
+    cout << "Difference of their absolute values = " << diff << endl;
+    cout << "Product of their absolute values = " << prod << endl;
+    cout << "Quotient of their absolute values = " << quot << endl;
+    return 0;
+}

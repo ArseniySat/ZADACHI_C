@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+float volume(float side)
+{
+    return pow(side, 3);
+}
+float area(float side)
+{
+    return 6 * pow(side, 2);
+}
+int main()
+{
+    float side, vol, ar;
+    cout << "Enter the length of side of cube: ";
+    cin >> side;
+    vol = volume(side);
+    ar = area(side);
+    cout << "Volume of cube = " << vol << endl;
+    cout << "Surface area of cube = " << ar << endl;
+    return 0;
+}
+

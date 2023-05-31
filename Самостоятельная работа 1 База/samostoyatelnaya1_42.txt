@@ -1,0 +1,57 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  double a, a2, a3, a4, a5, a10, a13, a20, a2_10, a5_13, a5_19, a2_17, a4_12_28;
+  cout << "Введите число a: ";
+  cin >> a;
+
+  // а^2
+  a2 = a * a;
+
+  // а^4
+  a4 = a2 * a2;
+
+  // а^5
+  a5 = a4 * a;
+
+  // а^10
+  a10 = a5 * a5;
+
+  // а^20
+  double a16 = a4 * a4;
+  double a20 = a16 * a4;
+
+  // а^3 * а^10
+  a3 = a2 * a;
+  a13 = a10 * a3;
+
+  // а^2 * а^10
+  a2_10 = a2 * a10;
+
+  // а^5 * а^13
+  a5_13 = a5 * a13;
+
+  // а^5 * а^19
+  double a19 = a5 * a13 * a;
+  a5_19 = a5 * a19;
+
+  // а^2 * а^17
+  double a16_2 = a16 * a2;
+  a2_17 = a16_2 * a;
+
+  // а^4 * а^12 * а^28
+  double a12 = a4 * a4 * a4;
+  double a28 = a12 * a12;
+  a4_12_28 = a4 * a12 * a28;
+
+  cout << "a^3: " << a3 << endl;
+  cout << "a^10: " << a10 << endl;
+  cout << "a^2 * a^10: " << a2_10 << endl;
+  cout << "a^5 * a^13: " << a5_13 << endl;
+  cout << "a^5 * a^19: " << a5_19 << endl;
+  cout << "a^2 * a^17: " << a2_17 << endl;
+  cout << "a^4 * a^12 * a^28: " << a4_12_28 << endl;
+
+  return 0;
+}

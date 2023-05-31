@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+float diameter(float radius)
+{
+    return 2 * radius;
+}
+int main()
+{
+    float radius, diam;
+    cout << "Enter the radius of circle: ";
+    cin >> radius;
+    diam = diameter(radius);
+    cout << "Diameter of circle = " << diam << endl;
+    return 0;
+}

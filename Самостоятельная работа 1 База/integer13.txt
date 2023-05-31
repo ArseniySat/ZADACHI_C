@@ -1,0 +1,14 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int num;
+    cin >> num;
+    int ones = num % 10;
+    int tens = (num % 100) / 10;
+    int hundreds = num / 100;
+    int new_num = ones * 100 + hundreds * 10 + tens;
+    cout << new_num << endl;
+    return 0;
+}

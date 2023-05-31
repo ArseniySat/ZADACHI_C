@@ -1,0 +1,24 @@
+#include<iostream>
+#include<cmath>
+
+using namespace std;
+
+int main()
+{
+    int v1,v2,t;
+    float s;
+    cout<<"Enter the speed of car1 in km/h: ";
+    cin>>v1;
+    cout<<"Enter the speed of car2 in km/h: ";
+    cin>>v2;
+    cout<<"Enter the distance between the cars in km: ";
+    cin>>s;
+    cout<<"Enter the time in hours: ";
+    cin>>t;
+
+    float distance = s;
+    distance += v1*t;
+    distance += v2*t;
+    cout<<"The distance between the two cars after "<<t<<" hours is : "<<distance<<" km"<<endl;
+    return 0;
+}

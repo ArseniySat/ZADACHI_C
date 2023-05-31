@@ -1,0 +1,19 @@
+#include<iostream>
+#include<cmath>
+
+using namespace std;
+
+int main()
+{
+    float a1,b1,c1,a2,b2,c2;
+    cout<<"Enter the value of a1, b1, c1 in the equation a1*x + b1*y = c1: ";
+    cin>>a1>>b1>>c1;
+    cout<<"Enter the value of a2, b2, c2 in the equation a2*x + b2*y = c2: ";
+    cin>>a2>>b2>>c2;
+
+    float x = (c1*b2 - c2*b1)/(a1*b2 - a2*b1);
+    float y = (a1*c2 - a2*c1)/(a1*b2 - a2*b1);
+
+    cout<<"The solution for the system of linear equations is x = "<<x<<" and y = "<<y<<endl;
+    return 0;
+}

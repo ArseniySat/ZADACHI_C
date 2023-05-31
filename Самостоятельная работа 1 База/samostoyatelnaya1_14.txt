@@ -1,0 +1,17 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+float function(float a)
+{
+    float y = (pow(a, 2) + 1) / sqrt(pow(a, 2) + 1);
+    return y;
+}
+int main()
+{
+    float a, y;
+    cout << "Enter value of a: ";
+    cin >> a;
+    y = function(a);
+    cout << "Value of y = " << y << endl;
+    return 0;
+}

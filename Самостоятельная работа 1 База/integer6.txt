@@ -1,0 +1,12 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int num;
+    cin >> num;
+    int tens = num / 10;
+    int ones = num - tens * 10;
+    cout << tens << " " << ones << endl;
+    return 0;
+}

@@ -1,0 +1,59 @@
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+    
+    // Integer14
+    cout << "Enter a three-digit number: ";
+    cin >> num;
+    cout << "Number with first and last digits swapped: " << (num % 10) * 100 + (num / 10 % 10) * 10 + num / 100 << endl;
+    
+    // Integer15
+    cout << "Enter a three-digit number: ";
+    cin >> num;
+    cout << "Number with hundreds and tens digits swapped: " << (num % 10) * 100 + num / 10 % 10 * 10 + num / 100 << endl;
+    
+    // Integer16
+    cout << "Enter a three-digit number: ";
+    cin >> num;
+    cout << "Number with tens and ones digits swapped: " << (num / 100) * 100 + (num % 10) * 10 + (num / 10 % 10) << endl;
+    
+    // Integer17
+    cout << "Enter a number greater than 999: ";
+    cin >> num;
+    cout << "Hundreds digit: " << num / 100 % 10 << endl;
+    
+    // Integer18
+    cout << "Enter a number greater than 999: ";
+    cin >> num;
+    cout << "Thousands digit: " << num / 1000 % 10 << endl;
+    
+    // Integer19
+    cout << "Enter the number of seconds elapsed since the start of the day: ";
+    cin >> num;
+    cout << "Number of full minutes elapsed: " << num / 60 << endl;
+    
+    // Integer20
+    cout << "Enter the number of seconds elapsed since the start of the day: ";
+    cin >> num;
+    cout << "Number of full hours elapsed: " << num / 3600 << endl;
+    
+    // Integer21
+    cout << "Enter the number of seconds elapsed since the start of the day: ";
+    cin >> num;
+    cout << "Number of seconds elapsed since the start of the last minute: " << num % 60 << endl;
+    
+    // Integer22
+    cout << "Enter the number of seconds elapsed since the start of the day: ";
+    cin >> num;
+    cout << "Number of seconds elapsed since the start of the last hour: " << num % 3600 << endl;
+    
+    // Integer23
+    cout << "Enter the number of seconds elapsed since the start of the day: ";
+    cin >> num;
+    cout << "Number of full minutes elapsed since the start of the last hour: " << num % 3600 / 60 << endl;
+    
+    return 0;
+}

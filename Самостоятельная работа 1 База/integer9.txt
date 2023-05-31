@@ -1,0 +1,11 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int num;
+    cin >> num;
+    int first_digit = num / 100;
+    cout << first_digit << endl;
+    return 0;
+}

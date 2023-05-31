@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+float circumference(float radius)
+{
+    return 2 * 3.1416 * radius;
+}
+float area(float radius)
+{
+    return 3.1416 * radius * radius;
+}
+int main()
+{
+    float radius, circ, ar;
+    cout << "Enter the radius of circle: ";
+    cin >> radius;
+    circ = circumference(radius);
+    ar = area(radius);
+    cout << "Circumference of circle = " << circ << endl;
+    cout << "Area of circle = " << ar << endl;
+    return 0;
+}

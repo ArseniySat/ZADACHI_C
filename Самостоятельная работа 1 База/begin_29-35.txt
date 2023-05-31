@@ -1,0 +1,85 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    const double pi = 3.14;
+    int choice;
+    do {
+        cout << "Choose a task:\n";
+        cout << "1. Begin29\n";
+        cout << "2. Begin30\n";
+        cout << "3. Begin31\n";
+        cout << "4. Begin32\n";
+        cout << "5. Begin33\n";
+        cout << "6. Begin34\n";
+        cout << "7. Begin35\n";
+        cout << "0. Exit\n";
+        cin >> choice;
+        switch (choice) {
+            case 1: {
+                double a;
+                cout << "Enter the angle in degrees (0 < a < 360):\n";
+                cin >> a;
+                cout << "The angle in radians is: " << a * pi / 180 << endl;
+                break;
+            }
+            case 2: {
+                double a;
+                cout << "Enter the angle in radians (0 < a < 2*pi):\n";
+                cin >> a;
+                cout << "The angle in degrees is: " << a * 180 / pi << endl;
+                break;
+            }
+            case 3: {
+                double Tf, Tc;
+                cout << "Enter the temperature in Fahrenheit:\n";
+                cin >> Tf;
+                Tc = (Tf - 32) * 5 / 9;
+                cout << "The temperature in Celsius is: " << Tc << endl;
+                break;
+            }
+            case 4: {
+                double Tc, Tf;
+                cout << "Enter the temperature in Celsius:\n";
+                cin >> Tc;
+                Tf = Tc * 9 / 5 + 32;
+                cout << "The temperature in Fahrenheit is: " << Tf << endl;
+                break;
+            }
+            case 5: {
+                double X, A, Y;
+                cout << "Enter X, A and Y:\n";
+                cin >> X >> A >> Y;
+                cout << "1 kg of candy costs " << A / X << " rubles\n";
+                cout << Y << " kg of candy costs " << A / X * Y << " rubles\n";
+                break;
+            }
+            case 6: {
+                double X, A, Y, B;
+                cout << "Enter X, A, Y and B:\n";
+                cin >> X >> A >> Y >> B;
+                cout << "1 kg of chocolate candy costs " << A / X << " rubles\n";
+                cout << "1 kg of iris candy costs " << B / Y << " rubles\n";
+                cout << "Chocolate candies are " << (A / X) / (B / Y) << " times more expensive than iris candies\n";
+                break;
+            }
+            case 7: {
+                double V, U, T1, T2;
+                cout << "Enter the speed of the boat and the speed of the river:\n";
+                cin >> V >> U;
+                cout << "Enter the time spent on the lake and the time spent on the river:\n";
+                cin >> T1 >> T2;
+                double S = V * T1 + (V - U) * T2;
+                cout << "The distance traveled by the boat is " << S << " km\n";
+                break;
+            }
+            case 0:
+                cout << "Goodbye!\n";
+                break;
+            default:
+                cout << "Invalid choice.\n";
+        }
+    } while (choice != 0);
+    return 0;
+}

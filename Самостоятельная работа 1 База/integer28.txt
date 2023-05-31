@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int K, N;
+    cout << "Enter day of year (1-363): ";
+    cin >> K;
+    cout << "Enter day of the week (1-7): ";
+    cin >> N;
+
+    int dayOfWeek = ((K + N - 2) % 7) + 1;
+    cout << "Day of week: " << dayOfWeek << endl;
+    return 0;
+}

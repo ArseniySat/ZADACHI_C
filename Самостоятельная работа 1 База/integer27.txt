@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int K;
+    cout << "Enter day of year (1-365): ";
+    cin >> K;
+
+    int dayOfWeek = (K + 5) % 7;
+    if (dayOfWeek == 0) {
+        dayOfWeek = 7;
+    }
+    cout << "Day of week: " << dayOfWeek << endl;
+    return 0;
+}

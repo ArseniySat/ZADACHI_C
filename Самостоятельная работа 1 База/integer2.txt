@@ -1,0 +1,11 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int M;
+    cin >> M;
+    int full_tons = M / 1000;
+    cout << full_tons << endl;
+    return 0;
+}

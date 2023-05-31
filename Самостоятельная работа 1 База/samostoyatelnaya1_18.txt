@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+float distance(float height)
+{
+    return sqrt(pow(6350 + height, 2) - pow(6350, 2));
+}
+int main()
+{
+    float height, dist;
+    cout << "Enter the height above Earth's surface: ";
+    cin >> height;
+    dist = distance(height);
+    cout << "Distance to horizon = " << dist << " km" << endl;
+    return 0;
+}
+

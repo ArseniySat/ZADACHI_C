@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+float perimeter(float side)
+{
+    return 4 * side;
+}
+int main()
+{
+    float side, perim;
+    cout << "Enter the length of side of square: ";
+    cin >> side;
+    perim = perimeter(side);
+    cout << "Perimeter of square = " << perim << endl;
+    return 0;
+}

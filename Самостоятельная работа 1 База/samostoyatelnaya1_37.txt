@@ -1,0 +1,18 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    double a, b, alpha;
+    cout << "Введите основания трапеции и угол при большем основании: ";
+    cin >> a >> b >> alpha;
+    if (a <= 0 || b <= 0 || alpha <= 0 || alpha >= 180) {
+        cout << "Ошибка: некорректные данные!" << endl;
+        return 1;
+    }
+    double h = (b - a) * tan(alpha * M_PI / 180);
+    double S = (a + b) * h / 2;
+    cout << "Площадь трапеции: " << S << endl;
+    return 0;
+}

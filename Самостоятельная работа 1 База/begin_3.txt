@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    float a, b, c, V, S;
+    cout << "Enter the length, breadth and height of the rectangular prism: ";
+    cin >> a >> b >> c;
+    V = a * b * c;
+    S = 2 * (a * b + b * c + a * c);
+    cout << "Volume of the rectangular prism = " << V << endl;
+    cout << "Surface area of the rectangular prism = " << S << endl;
+    return 0;
+}
+

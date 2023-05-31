@@ -1,0 +1,11 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int size_in_bytes;
+    cin >> size_in_bytes;
+    int full_kilobytes = size_in_bytes / 1024;
+    cout << full_kilobytes << endl;
+    return 0;
+}
